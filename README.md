@@ -34,6 +34,7 @@ Operational tools for manipulation of digital elevation models (DEMs), aerial or
 *   `calculate_raster_buffered_extent.py`: Calculates coordinates for a 300-meter margin inside/outside a raster's extent.
 *   `raster_invert_test.py`: Inverts raster values (multiplies by -1) for terrain analysis.
 *   `domain_from_raster.py`: Extracts a boundary shapefile showing the valid data extent of a raster.
+*   `spectral_indices_calculator.py`: Computes common remote sensing spectral indices (NDVI, NBR, NDWI) from satellite band rasters.
 
 #### 🔸 Raster Domain buffering and clipping (`raster_processing/domain_buffer_clip/`)
 Scripts that generate valid data domains for rasters, buffer them inward (e.g., -300 meters) to remove edge noise/null data, and clip the original rasters to this clean boundary.
@@ -50,6 +51,7 @@ Tools to work with raw LiDAR (`.las`), photogrammetry block outputs (`.blk`), an
 *   `grid_surface_to_ascii_v1.py` & `grid_surface_to_ascii_v2_test.py`: Automates generating batch scripts to convert gridded LAS point cloud surfaces into ASCII formats.
 *   `extract_film_coords_from_blk_v1.py` & `extract_film_coords_from_blk_v2_kaibab.py`: Extracts principal point film-to-image coordinates from photogrammetry `.blk` files by invoking the `hfatest.exe` helper binary.
 *   `phodar_lidar_evaluation_v1_ak.R` & `phodar_lidar_evaluation_v2.R`: R scripts that load, plot, and statistically evaluate structural differences between photogrammetry-derived CHMs (Phodar) and active laser sensor CHMs (LiDAR).
+*   `fusion_cloudmetrics_generator.py`: Scans a directory for `.las` point clouds and generates batch scripts to calculate canopy and height metrics using USDA Forest Service FUSION CLI tools.
 
 ---
 
@@ -60,6 +62,7 @@ Utility scripts focused on editing, creating, and indexing vector features (poin
 *   `qgis_geojson_to_shapefile_v1.py` & `qgis_geojson_to_shapefile_v2_batch.py`: Python console snippets for QGIS to convert GeoJSON layer tables in the active canvas directly to ESRI Shapefiles.
 *   `flightlines_expnum_test_v1.py` & `flightlines_expnum_test_v2.py`: Extracts unique flight exposure indexes (`EXPNUM`) and projects vector path lines.
 *   `big_year_map_creation.py`: Reads bird-watching location CSVs, maps coordinates, finds the minimum bounding envelope (MBR), and creates path maps.
+*   `batch_reproject_shapefiles.py`: Batch projects shapefiles in a workspace to a target Coordinate Reference System (CRS) using ArcPy.
 
 ---
 

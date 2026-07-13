@@ -13,6 +13,9 @@ This folder contains Python scripts for processing spatial raster datasets (orth
     *   **Purpose**: Batch processes ASCII grid files (`.asc`) to ERDAS IMAGINE format (`.img`).
     *   **Libraries**: `arcpy`, `glob`, `os`.
     *   **Usage**: Update the `filepath` variable to point to your directory of `.asc` files and run the script.
+*   **[`spectral_indices_calculator.py`](file:///C:/Users/clark/Documents/toolbox/raster_processing/spectral_indices_calculator.py)**:
+    *   **Purpose**: Calculates remote sensing spectral indices (NDVI, NBR, NDWI) from input raster bands, automatically selecting either ArcPy or Rasterio/NumPy depending on the environment.
+    *   **Libraries**: `arcpy` (ESRI Spatial Analyst) or `rasterio`/`numpy` (open-source).
 
 ### Resampling & Clipping
 *   **[`resample_naip_imagery.py`](file:///C:/Users/clark/Documents/toolbox/raster_processing/resample_naip_imagery.py)**:

@@ -24,3 +24,6 @@ This directory contains scripts for processing, converting, and analyzing vector
 *   **[`big_year_map_creation.py`](file:///C:/Users/clark/Documents/toolbox/gis_vector/big_year_map_creation.py)**:
     *   **Purpose**: Processes bird-watching location coordinate CSV files, creates point layers (`MakeXYEventLayer`), generates minimum bounding envelopes/rectangles (`MinimumBoundingGeometry` with ENVELOPE parameter), and maps paths.
     *   **Libraries**: `arcpy`, `glob`, `shutil`.
+*   **[`batch_reproject_shapefiles.py`](file:///C:/Users/clark/Documents/toolbox/gis_vector/batch_reproject_shapefiles.py)**:
+    *   **Purpose**: Scans a folder for shapefiles and batch reprojects them to a target CRS/EPSG coordinate reference system using ArcPy.
+    *   **Libraries**: `arcpy`, `os`.

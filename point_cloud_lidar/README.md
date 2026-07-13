@@ -8,6 +8,9 @@ This directory contains R, Python, and Batch scripts to clean, process, and anal
 *   **[`filter_las_generator_v1.py`](file:///C:/Users/clark/Documents/toolbox/point_cloud_lidar/filter_las_generator_v1.py) to [`filter_las_generator_v4_blk3a2.py`](file:///C:/Users/clark/Documents/toolbox/point_cloud_lidar/filter_las_generator_v4_blk3a2.py)**:
     *   **Purpose**: Scans directories for `.las` point clouds and generates Windows Batch (`.bat`) command files that call the FUSION/LDART `FilterData` utility. This utility removes high/low outlier noise using standard deviations and window size algorithms.
     *   **Libraries**: `os`.
+*   **[`fusion_cloudmetrics_generator.py`](file:///C:/Users/clark/Documents/toolbox/point_cloud_lidar/fusion_cloudmetrics_generator.py)**:
+    *   **Purpose**: Scans a folder of `.las` point clouds and generates a Windows Batch (`.bat`) script that runs FUSION's `CloudMetrics` and `GridMetrics` CLI tools to compute forest structure statistics (canopy cover, height percentiles, density).
+    *   **Libraries**: `os`.
 *   **[`grid_surface_to_ascii_v1.py`](file:///C:/Users/clark/Documents/toolbox/point_cloud_lidar/grid_surface_to_ascii_v1.py) & [`grid_surface_to_ascii_v2_test.py`](file:///C:/Users/clark/Documents/toolbox/point_cloud_lidar/grid_surface_to_ascii_v2_test.py)**:
     *   **Purpose**: Generates batch files to automate converting point cloud grid surfaces to standard ASCII format.
 
