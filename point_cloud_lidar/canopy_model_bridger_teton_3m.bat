@@ -1,0 +1,1 @@
+canopymodel /outlier \\166.2.126.25\rseat\Programs\RSSC\fy2016\Projects\R4-NAIP_PointCloud\04_Data\01_NAIP_point_cloud\02_Tiles\DSM_3m.dtm 3 m m 1 12 2 2 \\166.2.126.25\rseat\Programs\RSSC\fy2016\Projects\R4-NAIP_PointCloud\04_Data\01_NAIP_point_cloud\02_Tiles\*.las

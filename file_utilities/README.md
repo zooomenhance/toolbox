@@ -31,6 +31,23 @@ This directory contains cross-project utility scripts that automate tedious file
     *   **Purpose**: Python expression block for the ArcGIS Field Calculator to write random float values between 0 and 1 to attribute tables.
     *   **Libraries**: `numpy`.
 
+### Media, Scraping & XML Utilities
+*   **[`image_to_video.py`](file:///C:/Users/clark/Documents/toolbox/file_utilities/image_to_video.py)**:
+    *   **Purpose**: Command-line Python script utilizing OpenCV (`cv2`) to compile a folder of images into an MP4 video file with custom framerate and dimension options.
+    *   **Libraries**: `cv2`, `argparse`, `os`.
+*   **[`make_gif.py`](file:///C:/Users/clark/Documents/toolbox/file_utilities/make_gif.py)**:
+    *   **Purpose**: Uses `imageio` to read a folder of images and generate an animated `.gif` file with set frame delays.
+    *   **Libraries**: `os`, `imageio`.
+*   **[`xml_parsing_api_demo.py`](file:///C:/Users/clark/Documents/toolbox/file_utilities/xml_parsing_api_demo.py)**:
+    *   **Purpose**: Fetches real-time bus locations from a transit API XML feed, saves it to disk, and parses latitudes/longitudes using `xml.etree.ElementTree`.
+    *   **Libraries**: `requests`, `xml.etree.ElementTree`, `webbrowser`.
+*   **[`crop_from_annotation_box.py`](file:///C:/Users/clark/Documents/toolbox/file_utilities/crop_from_annotation_box.py)**:
+    *   **Purpose**: Automatically crops sub-images from larger image assets based on bounding box annotation coordinates.
+    *   **Libraries**: `os`, `cv2`.
+*   **[`webscrape_subdirectories.py`](file:///C:/Users/clark/Documents/toolbox/file_utilities/webscrape_subdirectories.py)**:
+    *   **Purpose**: Simple scraper to automatically scan and download target directories from standard web hosts.
+    *   **Libraries**: `requests` / `urllib`.
+
 ### Workload Simulation
 *   **[`simulated_copy_workload.py`](file:///C:/Users/clark/Documents/toolbox/file_utilities/simulated_copy_workload.py)**:
     *   **Purpose**: Reads a file list and simulates copy workloads by printing operations and sleeping at random intervals (0-3s). Used for performance benchmarking and testing processing pipelines.

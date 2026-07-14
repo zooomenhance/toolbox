@@ -35,6 +35,10 @@ Operational tools for manipulation of digital elevation models (DEMs), aerial or
 *   `raster_invert_test.py`: Inverts raster values (multiplies by -1) for terrain analysis.
 *   `domain_from_raster.py`: Extracts a boundary shapefile showing the valid data extent of a raster.
 *   `spectral_indices_calculator.py`: Computes common remote sensing spectral indices (NDVI, NBR, NDWI) from satellite band rasters.
+*   `gdal_projection_check.py`: Open-source tool using GDAL to print spatial metadata, projections, and sizes of raster datasets.
+*   `batch_reproject_rasters.py`: Walks through workspaces and batch reprojects all found raster datasets using ArcPy.
+*   `batch_mosaic_from_list.py`: Mosaics multiple overlapping raster segments based on a CSV index list.
+*   `topographic_wetness_index.py`: Calculates Topographic Wetness Index (TWI) from input digital elevation models (DEM) using ArcPy.
 
 #### 🔸 Raster Domain buffering and clipping (`raster_processing/domain_buffer_clip/`)
 Scripts that generate valid data domains for rasters, buffer them inward (e.g., -300 meters) to remove edge noise/null data, and clip the original rasters to this clean boundary.
@@ -52,6 +56,7 @@ Tools to work with raw LiDAR (`.las`), photogrammetry block outputs (`.blk`), an
 *   `extract_film_coords_from_blk_v1.py` & `extract_film_coords_from_blk_v2_kaibab.py`: Extracts principal point film-to-image coordinates from photogrammetry `.blk` files by invoking the `hfatest.exe` helper binary.
 *   `phodar_lidar_evaluation_v1_ak.R` & `phodar_lidar_evaluation_v2.R`: R scripts that load, plot, and statistically evaluate structural differences between photogrammetry-derived CHMs (Phodar) and active laser sensor CHMs (LiDAR).
 *   `fusion_cloudmetrics_generator.py`: Scans a directory for `.las` point clouds and generates batch scripts to calculate canopy and height metrics using USDA Forest Service FUSION CLI tools.
+*   `canopy_model_bridger_teton_3m.bat`: An example FUSION batch script running the `canopymodel` tool to generate 3m Canopy Height Models.
 
 ---
 
@@ -70,6 +75,10 @@ Utility scripts focused on editing, creating, and indexing vector features (poin
 Advanced modeling and statistical workflows for mapping forestry resources, canopy cover, and tree height classes.
 *   `veg_class_assignment_carson_v1.py` & `veg_class_assignment_carson_v2.py`: Classification scripts for Carson National Forest. Uses an `UpdateCursor` to assign canopy size classes based on heights and data sources.
 *   `veg_class_assignment_santafe_v1.py` - `veg_class_assignment_santafe_v3_cleaned.py`: Similar reclassification scripts tailored for the Santa Fe National Forest dataset.
+*   `attribute_table_creation_carson.py`: Populates attribute tables with forestry Lifeform, Canopy Cover, and Size classes for Carson National Forest.
+*   `compute_canopy_strata_cover.py`: Dynamically calculates canopy cover statistics for distinct vertical height strata.
+*   `cibola_merge_forestry_data.R` & `cibola_merge_phodar_data.R`: Merges and cleans multi-source satellite/aerial vegetation index tables for the Cibola National Forest.
+*   `coronado_merge_forestry_data.R`: Joins and merges forestry datasets for Coronado National Forest.
 *   `uwc_separability_analysis.R`: Computes Mahalanobis, Bhattacharyya, and Jeffries-Matusita distances between vegetation classes to analyze spectral separability for the Uinta-Wasatch-Cache National Forest.
 *   `vegetation_mapping_random_forest.R`: Trains a Random Forest classifier in R using training plots and applies predictions to map vegetation types.
 *   `zonal_stats_rf_classifier.py`: Connects Arcpy spatial zonal stats with Pandas and Geopandas dataframes to format datasets for Dixie National Forest machine learning models.
@@ -87,6 +96,21 @@ Cross-project helper scripts to automate system tasks.
 *   `generate_random_number_arcgis.py`: Python code block expression for the ArcGIS Field Calculator to compute random float values.
 *   `compress_tif_batch.bat`: Calls ISRU compression binaries (`mr_file.exe`) to compress `.tif` files into JPEG files with overviews.
 *   `uncompress_tif_batch.bat`: Batch uncompresses `.tif` files.
+*   `image_to_video.py`: Compiles directories of images (numerically or alphabetically sorted) into MP4 videos using OpenCV.
+*   `make_gif.py`: Compiles image groups into animated GIF formats using `imageio`.
+*   `xml_parsing_api_demo.py`: Connects to real-time transit XML API, downloads logs, and parses latitudes and longitudes of vehicle coordinates.
+*   `crop_from_annotation_box.py`: Automates cropping image tiles using coordinate bounding boxes.
+*   `webscrape_subdirectories.py`: Scrapes web host directory links and downloads nested datasets.
+
+---
+
+### 6. Miscellaneous (`miscellaneous/`)
+Standalone scripts for data visualization and algorithms.
+*   `collatz.py`: Simulates the Collatz Conjecture (3n+1 problem) in Python.
+*   `ascii_art.py`: Maps pixel values of images to text characters to draw ASCII art.
+*   `time_test.py`: Benchmark script to measure geoprocessor execution durations.
+*   `us_place_names_analysis.py`: Converts DBF database tables to Pandas DataFrames to find the most common US place names.
+*   `generative_art_sinusoidal.py`: Trigonometric wave line art generator using Matplotlib.
 
 ---
 

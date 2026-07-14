@@ -15,3 +15,6 @@ This folder contains standalone scripts that are outside of the primary forestry
 *   **[`us_place_names_analysis.py`](file:///C:/Users/clark/Documents/toolbox/miscellaneous/us_place_names_analysis.py)**:
     *   **Purpose**: Parses USGS national place name database files (`.dbf`), converts the data to Pandas DataFrames, and calculates frequency stats to find the most common names in the US.
     *   **Libraries**: `pandas`, `dbfread` / `simpledbf`.
+*   **[`generative_art_sinusoidal.py`](file:///C:/Users/clark/Documents/toolbox/miscellaneous/generative_art_sinusoidal.py)**:
+    *   **Purpose**: Mathematical art generator that uses trigonometric wave calculations (sin/cos) and matplotlib to draw complex generative art vector line structures.
+    *   **Libraries**: `math`, `matplotlib`.

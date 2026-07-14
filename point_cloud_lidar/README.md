@@ -13,6 +13,8 @@ This directory contains R, Python, and Batch scripts to clean, process, and anal
     *   **Libraries**: `os`.
 *   **[`grid_surface_to_ascii_v1.py`](file:///C:/Users/clark/Documents/toolbox/point_cloud_lidar/grid_surface_to_ascii_v1.py) & [`grid_surface_to_ascii_v2_test.py`](file:///C:/Users/clark/Documents/toolbox/point_cloud_lidar/grid_surface_to_ascii_v2_test.py)**:
     *   **Purpose**: Generates batch files to automate converting point cloud grid surfaces to standard ASCII format.
+*   **[`canopy_model_bridger_teton_3m.bat`](file:///C:/Users/clark/Documents/toolbox/point_cloud_lidar/canopy_model_bridger_teton_3m.bat)**:
+    *   **Purpose**: An example Windows batch script that calls FUSION's `canopymodel` tool to process and generate a 3m canopy height model (CHM) from a folder of `.las` files.
 
 ### Photogrammetric Principal Point Extraction
 *   **[`extract_film_coords_from_blk_v1.py`](file:///C:/Users/clark/Documents/toolbox/point_cloud_lidar/extract_film_coords_from_blk_v1.py) & [`extract_film_coords_from_blk_v2_kaibab.py`](file:///C:/Users/clark/Documents/toolbox/point_cloud_lidar/extract_film_coords_from_blk_v2_kaibab.py)**:
